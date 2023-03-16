@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Buddy</title>
+    
+	<style>
+		body {
+			background-color: #F1F0F0;
+			font-family: 'Avenir', 'Helvetica Neue';
+      font-size: 14px;
+      min-width: 500px;
+		}
+		
+		.chatbox {
+			display: flex;
+			flex-direction: column;
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			margin: 20px;
+			min-width: 475px;
+			align-self: center;
+			overflow: hidden;
+		}
+		
+		.message {
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 10px;
+		}
+		
+		.from-me {
+			align-self: flex-end;
+			background-color: #DCF8C6;
+		}
+		
+		.from-me:hover {
+			cursor: pointer;
+		}
+		
+		.from-them {
+			align-self: flex-start;
+      background-color: #F1F0F0;
+		}
+		
+		.from-me .message {
+			align-self: flex-end;
+			color: #000000;
+		}
+		
+		.from-them .message {
+			align-self: flex-start;
+			color: #000000;
+		}
+		
+		.message p {
+			margin: 0;
+			line-height: 1.5;
+			word-wrap: break-word;
+			max-width: 250px;
+		}
+		
+		.timestamp {
+			align-self: flex-end;
+			color: #B9B9B9;
+			font-size: 12px;
+			margin: 5px 10px 0 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="error"></div>
+	<div id="chatbox" class="chatbox">
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html>

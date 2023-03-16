@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Study Buddy Settings</title>
+    <style>
+      body {
+        font-family: 'Avenir, sans-serif';
+        background-color: #F7F7F7;
+      }
+
+      h1 {
+        font-size: 32px;
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      p {
+        font-size: 20px;
+        color: #666;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      input[type=text] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: #FFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-right: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: #333;
+        color: #FFF;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SB Extension Settings</h1>
+    <p>Enter your OPEN AI API key:</p>
+    <input type="text" id="apiKeyInput">
+    <button id="saveButton">Save</button>
+    <p>You can find your API key at: https://platform.openai.com/account/api-keys.</p>
+  </body>
+  <script type="module" src="options.js"></script>
+</html>
